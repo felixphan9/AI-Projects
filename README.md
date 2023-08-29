@@ -18,19 +18,19 @@ print('Using TensorFlow version', tf.__version__)
 
 Task 2: The Dataset
 Import MNIST
-```
+```python
 from tensorflow.keras.datasets import mnist
 (x_train, y_train), (x_test, y_test) = mnist.load_data()
 ```
 Shapes of Imported Arrays
-```
+```python
 print('x_train shape:', x_train.shape)
 print('y_train shape:', y_train.shape)
 print('x_test shape:', x_test.shape)
 print('y_test shape:', y_test.shape)
 ```
 Plot an Image Example
-```
+```python
 from matplotlib import pypolt as plt
 %matplotlib inline
 
@@ -46,20 +46,25 @@ original label 	one-hot encoded label
 7 	[0, 0, 0, 0, 0, 0, 0, 1, 0, 0]
 1 	[0, 1, 0, 0, 0, 0, 0, 0, 0, 0]
 Encoding Labels
-
+```python
+from tensorflow.keras.utils import to_categorical
+y_train_encoded = to_categorical(y_train)
+y_test_encoded = to_categorical(y_test
+```
 Validated Shapes
-
-Display Encoded Labels
-
+```python
+print('y_train_encoded shape: ' y_train_encoded.shape)
+print('y_test_encoded shape: ' y_test_encoded.shape)
+```
 
 Task 4: Neural Networks
 Linear Equations
+![image](https://github.com/felixphan9/Basic-Image-Classification/assets/143317965/2da09245-87f7-439a-8b1e-76b4e0f5d34e)
 
 Single Neuron
 
 The above graph simply represents the equation:
 
-\U0001d466=\U0001d4641\u2217\U0001d4651+\U0001d4642\u2217\U0001d4652+\U0001d4643\u2217\U0001d4653+\U0001d44f
 
 Where the w1, w2, w3 are called the weights and b is an intercept term called bias. The equation can also be vectorised like this:
 
