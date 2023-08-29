@@ -10,11 +10,11 @@ This graph describes the problem that we are trying to solve visually. We want t
 Hand Written Digits Classification
 Import TensorFlow
 
-`import tensorflow as tf`
-
+```
+import tensorflow as tf
 tf.logging.set_verbosity(tf.logging.ERROR)
-
 print('Using TensorFlow version', tf.__version__)
+```
 
 Task 2: The Dataset
 Import MNIST
