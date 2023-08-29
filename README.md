@@ -10,7 +10,7 @@ This graph describes the problem that we are trying to solve visually. We want t
 Hand Written Digits Classification
 Import TensorFlow
 
-```
+```python
 import tensorflow as tf
 tf.logging.set_verbosity(tf.logging.ERROR)
 print('Using TensorFlow version', tf.__version__)
