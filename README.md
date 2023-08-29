@@ -18,22 +18,25 @@ print('Using TensorFlow version', tf.__version__)
 
 Task 2: The Dataset
 Import MNIST
-
-\u200b
-
+```
+from tensorflow.keras.datasets import mnist
+(x_train, y_train), (x_test, y_test) = mnist.load_data()
+```
 Shapes of Imported Arrays
-
-\u200b
-
+```
+print('x_train shape:', x_train.shape)
+print('y_train shape:', y_train.shape)
+print('x_test shape:', x_test.shape)
+print('y_test shape:', y_test.shape)
+```
 Plot an Image Example
+```
+from matplotlib import pypolt as plt
+%matplotlib inline
 
-\u200b
-
-Display Labels
-
-\u200b
-
-\u200b
+plt.imshow(x_train[0], cmap = 'binary')
+plt.show()
+```
 
 Task 3: One Hot Encoding
 
@@ -44,15 +47,10 @@ original label 	one-hot encoded label
 1 	[0, 1, 0, 0, 0, 0, 0, 0, 0, 0]
 Encoding Labels
 
-\u200b
-
 Validated Shapes
-
-\u200b
 
 Display Encoded Labels
 
-\u200b
 
 Task 4: Neural Networks
 Linear Equations
