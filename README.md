@@ -61,42 +61,41 @@ Task 4: Neural Networks
 Linear Equations
 ![image](https://github.com/felixphan9/Basic-Image-Classification/assets/143317965/2da09245-87f7-439a-8b1e-76b4e0f5d34e)
 
-Single Neuron
-
-The above graph simply represents the equation:
-
-
-Where the w1, w2, w3 are called the weights and b is an intercept term called bias. The equation can also be vectorised like this:
-
-\U0001d466=\U0001d44a.\U0001d44b+\U0001d44f
-
-Where X = [x1, x2, x3] and W = [w1, w2, w3].T. The .T means transpose. This is because we want the dot product to give us the result we want i.e. w1 * x1 + w2 * x2 + w3 * x3. This gives us the vectorised version of our linear equation.
-
-A simple, linear approach to solving hand-written image classification problem - could it work?
-
-Single Neuron with 784 features
-Neural Networks
+Where the `w1, w2, w3` are called the weights and `b` is an intercept term called bias. The equation can also be *vectorised* like this:
 
 Neural Network with 2 hidden layers
+![image](https://github.com/felixphan9/Basic-Image-Classification/assets/143317965/f2804ac6-6e41-4ab4-96c3-d447fab88ddb)
 
 This model is much more likely to solve the problem as it can learn more complex function mapping for the inputs and outputs in our dataset.
+
 Task 5: Preprocessing the Examples
 Unrolling N-dimensional Arrays to Vectors
+```python
+import numpy as np
 
-\u200b
+x_train_reshaped = np.reshape(x_train, (60000, 784))
+x_test_reshaped = np.reshape(x_test, (10000, 784))
 
+print('x_train_reshaped shape:', x_train_reshaped.shape)
+print('x_test_reshaped shape:', x_test_reshaped.shape)
+```
 Display Pixel Values
-
-\u200b
-
+```python
+print(set(x_train_reshaped[0]))
+```
 Data Normalization
+```python
+x_mean = np.mean(x_train_reshaped)
+x_std = np.std(x_train_reshaped)
+epsilon = 1e-10
 
-\u200b
-
+x_train_norm = (x_train_reshaped - x_mean) / (x_std + epsilon)
+x_test_norm = (x_test_reshaped - x_mean) / (x_std + epsilon)
+```
 Display Normalized Pixel Values
-
-\u200b
-
+```python
+print(set(x_train_norm[0]))
+```
 Task 6: Creating a Model
 Creating the Model
 
