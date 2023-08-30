@@ -59,11 +59,20 @@ print('y_test_encoded shape: ' y_test_encoded.shape)
 
 Task 4: Neural Networks
 Linear Equations
+
+
+
+
 ![image](https://github.com/felixphan9/Basic-Image-Classification/assets/143317965/2da09245-87f7-439a-8b1e-76b4e0f5d34e)
 
 Where the `w1, w2, w3` are called the weights and `b` is an intercept term called bias. The equation can also be *vectorised* like this:
 
 Neural Network with 2 hidden layers
+
+
+
+
+
 ![image](https://github.com/felixphan9/Basic-Image-Classification/assets/143317965/f2804ac6-6e41-4ab4-96c3-d447fab88ddb)
 
 
