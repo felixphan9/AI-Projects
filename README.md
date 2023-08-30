@@ -66,7 +66,8 @@ Where the `w1, w2, w3` are called the weights and `b` is an intercept term calle
 Neural Network with 2 hidden layers
 ![image](https://github.com/felixphan9/Basic-Image-Classification/assets/143317965/f2804ac6-6e41-4ab4-96c3-d447fab88ddb)
 
-This model is much more likely to solve the problem as it can learn more complex function mapping for the inputs and outputs in our dataset.
+
+  This model is much more likely to solve the problem as it can learn more complex function mapping for the inputs and outputs in our dataset.
 
 Task 5: Preprocessing the Examples
 Unrolling N-dimensional Arrays to Vectors
