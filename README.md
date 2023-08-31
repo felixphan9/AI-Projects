@@ -1,4 +1,4 @@
-# Basic-Image-Classification
+# Basic-Image-Classification-Using-CNNs
 
 Rhyme
 #Task 1: Introduction
