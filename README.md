@@ -1,4 +1,5 @@
 # Basic-Image-Classification-Using-CNNs
+-> Change this to CNNs instead of basic NN
 
 Rhyme
 #Task 1: Introduction
