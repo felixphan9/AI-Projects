@@ -1,14 +1,22 @@
 # Basic-Image-Classification-Using-CNNs
--> Change this to CNNs instead of basic NN
 
 Rhyme
 #Task 1: Introduction
 
-Welcome to Basic Image Classification with TensorFlow.
+Welcome to Basic Image Classification with TensorFlow using CNNs
 
-This graph describes the problem that we are trying to solve visually. We want to create and train a model that takes an image of a hand written digit as input and predicts the class of that digit, that is, it predicts the digit or it predicts the class of the input image.
+This tutorial will perform basic image classification using CNNs on the CIFAR-10 dataset. 
+The CIFAR-10 dataset consists of 60000 32x32 colour images in 10 classes, with 6000 images per class. There are 50000 training images and 10000 test images.
 
-Hand Written Digits Classification
+The dataset is divided into five training batches and one test batch, each with 10000 images. The test batch contains exactly 1000 randomly-selected images from each class. The training batches contain the remaining images in random order, but some training batches may contain more images from one class than another. Between them, the training batches contain exactly 5000 images from each class.
+
+Here are the classes in the dataset, as well as 10 random images from each:
+
+![image](https://github.com/felixphan9/Basic-Image-Classification/assets/143317965/597c974c-df35-4c2a-ad9d-87fd1a44f1a1)
+
+
+Task 1: Introduction
+
 Import TensorFlow
 
 ```python
