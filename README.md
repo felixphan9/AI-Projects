@@ -12,7 +12,7 @@ The dataset is divided into five training batches and one test batch, each with 
 
 Here are the classes in the dataset, as well as 10 random images from each:
 
-![image](https://github.com/felixphan9/Basic-Image-Classification/assets/143317965/597c974c-df35-4c2a-ad9d-87fd1a44f1a1)
+![image](https://github.com/felixphan9/Basic-Image-Classification/assets/143317965/b6750d01-4605-4837-906c-a74af31c3aee)
 
 
 Task 1: Introduction
@@ -26,7 +26,7 @@ print('Using TensorFlow version', tf.__version__)
 ```
 
 Task 2: The Dataset
-Import MNIST
+Import CIFAR-10
 ```python
 from tensorflow.keras.datasets import mnist
 (x_train, y_train), (x_test, y_test) = mnist.load_data()
