@@ -110,41 +110,88 @@ print(set(x_train_norm[0]))
 Task 6: Creating a Model
 Creating the Model
 
-\u200b
+```python
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense
+
+model = Sequential([
+    Dense(128, activation='relu', input_shappe=(784,)),
+    Dense(128, activation='relu'),
+    Dense(10, activation='softmax')
+])
+```
 
 Activation Functions
 
 The first step in the node is the linear sum of the inputs:
-\U0001d44d=\U0001d44a.\U0001d44b+\U0001d44f
+
+![image](https://github.com/felixphan9/Basic-Image-Classification/assets/143317965/faee4522-d622-4fb8-94ca-0e77a7c386c1)
 
 The second step in the node is the activation function output:
 
-\U0001d434=\U0001d453(\U0001d44d)
+![image](https://github.com/felixphan9/Basic-Image-Classification/assets/143317965/09270f90-f6a6-4d40-92e5-47f3912f13fb)
 
 Graphical representation of a node where the two operations are performed:
 
 ReLU
+
+![image](https://github.com/felixphan9/Basic-Image-Classification/assets/143317965/bdd9d659-9ff2-4caa-8448-a0287aaa12ed)
+
 Compiling the Model
 
-\u200b
+```python
+model.compile(
+  optimizer='sgd',
+  loss='categorical_crossentropy',
+  metrics=['accuracy']
+)
+
+model.summary()
+```
 
 Task 7: Training the Model
 Training the Model
 
-\u200b
+```python
+model.fit(x_train_norm, y_train_encoded, epochs=3)
+```
 
 Evaluating the Model
 
-\u200b
+```python
+loss, accuracy = model.evaluate(x_test_norm, y_test_encoded)
+print('Test set accuracy:', accuracy * 100)
+```
 
 Task 8: PredictionsÂ¶
 Predictions on Test Set
 
-\u200b
+```python
+preds = model.predict(x_test_norm)
+print('Shape of preds:', preds.shape)
+```
 
 Plotting the Results
 
-\u200b
+```python
+plt.figure(figsize=(12, 12))
 
-\u200b
+start_index = 0
+
+for i in range(25):
+    plt.subplot(5, 5,i+1)
+    plt.grids(False)
+    plt.xticks([])
+    plt.yticks([])
+
+    pred = np.argmax(preds[start_index+i])
+    gt = y_test[start_index+i]
+
+    col = 'g'
+    if pred != gt:
+        col = 'r'
+    plt.xlabel('i={}, pred={}, gt={}'.format(start_index+i, pred, gt), color=col)
+    plt.imshow(x_test[start_index+i], cmap='binary')
+plt.show()
+```
 
