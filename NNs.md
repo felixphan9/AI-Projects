@@ -3,7 +3,7 @@
 Rhyme
 #Task 1: Introduction
 
-Welcome to Basic Image Classification with TensorFlow.
+This is a small Basic Image Classification project with TensorFlow.
 
 This graph describes the problem that we are trying to solve visually. We want to create and train a model that takes an image of a hand written digit as input and predicts the class of that digit, that is, it predicts the digit or it predicts the class of the input image.
 
