@@ -7,6 +7,11 @@ This is a small Basic Image Classification project with TensorFlow.
 
 This graph describes the problem that we are trying to solve visually. We want to create and train a model that takes an image of a hand written digit as input and predicts the class of that digit, that is, it predicts the digit or it predicts the class of the input image.
 
+-----
+Prerequisites
+```python
+pip install tensorflow
+```
 
 ![image](https://github.com/felixphan9/AI-Projects/assets/143317965/08af9d53-af3b-4973-b860-f484c7b66fce)
 
@@ -37,7 +42,7 @@ print('y_test shape:', y_test.shape)
 ```
 Plot an Image Example
 ```python
-from matplotlib import pypolt as plt
+from matplotlib import pyplot as plt
 %matplotlib inline
 
 plt.imshow(x_train[0], cmap = 'binary')
