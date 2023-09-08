@@ -175,16 +175,13 @@ Model: "sequential"
 _________________________________________________________________
  Layer (type)                Output Shape              Param #   
  dense (Dense)               (None, 128)               100480    
-                                                                 
  dense_1 (Dense)             (None, 128)               16512     
-                                                                 
  dense_2 (Dense)             (None, 10)                1290      
+
 Total params: 118282 (462.04 KB)
 Trainable params: 118282 (462.04 KB)
 Non-trainable params: 0 (0.00 Byte)
 _________________________________________________________________
-
-
 
 
 Task 7: Training the Model
@@ -196,8 +193,10 @@ model.fit(x_train_norm, y_train_encoded, epochs=3)
 
 Epoch 1/3
 1875/1875 [==============================] - 4s 2ms/step - loss: 0.3693 - accuracy: 0.8918
+
 Epoch 2/3
 1875/1875 [==============================] - 3s 2ms/step - loss: 0.1792 - accuracy: 0.9473
+
 Epoch 3/3
 1875/1875 [==============================] - 3s 2ms/step - loss: 0.1371 - accuracy: 0.9595
 
