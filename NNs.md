@@ -49,6 +49,10 @@ plt.imshow(x_train[0], cmap = 'binary')
 plt.show()
 ```
 
+![image](https://github.com/felixphan9/AI-Projects/assets/143317965/09e07024-2055-4346-b0dc-a4115e71ee83)
+
+
+
 Task 3: One Hot Encoding
 
 After this encoding, every label will be converted to a list with 10 elements and the element at index to the corresponding class will be set to 1, rest will be set to 0:
