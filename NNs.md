@@ -51,6 +51,7 @@ original label 	one-hot encoded label
 5 	[0, 0, 0, 0, 0, 1, 0, 0, 0, 0]
 7 	[0, 0, 0, 0, 0, 0, 0, 1, 0, 0]
 1 	[0, 1, 0, 0, 0, 0, 0, 0, 0, 0]
+
 Encoding Labels
 ```python
 from tensorflow.keras.utils import to_categorical
