@@ -1,6 +1,6 @@
 # Object Localization with TensorFlow
 
-
+This project will guide you to use TensorFlow to create a model and train a model to perform object localization
 
 
 ![image](https://github.com/felixphan9/AI-Projects/assets/143317965/e5a4442e-e798-435d-9d94-b0049ba81eab)
@@ -87,32 +87,32 @@ for class_id, values in emojis.items():
 ```
 `emojis`
 {0: {'name': 'happy',
-  'file': '1F642.png',
-  'image': <PIL.Image.Image image mode=RGB size=72x72>},
+    'file': '1F642.png',
+    'image': <PIL.Image.Image image mode=RGB size=72x72>},
  1: {'name': 'laughing',
-  'file': '1F602.png',
-  'image': <PIL.Image.Image image mode=RGB size=72x72>},
+    'file': '1F602.png',
+    'image': <PIL.Image.Image image mode=RGB size=72x72>},
  2: {'name': 'skeptical',
-  'file': '1F928.png',
-  'image': <PIL.Image.Image image mode=RGB size=72x72>},
+    'file': '1F928.png',
+    'image': <PIL.Image.Image image mode=RGB size=72x72>},
  3: {'name': 'sad',
-  'file': '1F630.png',
-  'image': <PIL.Image.Image image mode=RGB size=72x72>},
+    'file': '1F630.png',
+    'image': <PIL.Image.Image image mode=RGB size=72x72>},
  4: {'name': 'cool',
-  'file': '1F60E.png',
-  'image': <PIL.Image.Image image mode=RGB size=72x72>},
+    'file': '1F60E.png',
+    'image': <PIL.Image.Image image mode=RGB size=72x72>},
  5: {'name': 'whoa',
-  'file': '1F62F.png',
-  'image': <PIL.Image.Image image mode=RGB size=72x72>},
+    'file': '1F62F.png',
+    'image': <PIL.Image.Image image mode=RGB size=72x72>},
  6: {'name': 'crying',
-  'file': '1F62D.png',
-  'image': <PIL.Image.Image image mode=RGB size=72x72>},
+    'file': '1F62D.png',
+    'image': <PIL.Image.Image image mode=RGB size=72x72>},
  7: {'name': 'puking',
-  'file': '1F92E.png',
-  'image': <PIL.Image.Image image mode=RGB size=72x72>},
+    'file': '1F92E.png',
+    'image': <PIL.Image.Image image mode=RGB size=72x72>},
  8: {'name': 'nervous',
-  'file': '1F62C.png',
-  'image': <PIL.Image.Image image mode=RGB size=72x72>}}
+    'file': '1F62C.png',
+    'image': <PIL.Image.Image image mode=RGB size=72x72>}}
 
 Function `create_example()` take no arguments and returns a tuple of 4 values:
 - The image of an emoji
