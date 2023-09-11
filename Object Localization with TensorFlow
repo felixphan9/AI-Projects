@@ -1,9 +1,0 @@
-# Object Localization with TensorFlow
-
-Task 1: Download and Visualize Data
-```python
-!wget https://github.com/hfg-gmuend/openmoji/releases/latest/download/openmoji-72x72-color.zip
-!mkdir emojis
-!unzip -q openmoji-72x72-color.zip -d ./emojis
-!pip install tensorflow==2.4
-```
